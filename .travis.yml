@@ -1,13 +1,14 @@
 language: node_js
 node_js:
   - 6
+  - 7
   - 8
   - 9
 
 cache: yarn
 
-before_script:
-  - yarn build
+install: yarn install
 
-script:
-  - yarn test:ci
+before_script: yarn build
+
+script: yarn test:ci
