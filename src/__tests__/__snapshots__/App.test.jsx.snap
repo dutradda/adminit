@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App routes 1`] = `
+<p>
+  Test1
+</p>
+`;
+
+exports[`renders App routes 2`] = `
+<p>
+  Test2
+</p>
+`;
+
+exports[`renders App with invalid path 1`] = `null`;
+
+exports[`renders App with exact route 1`] = `null`;
+
+exports[`renders App without exact route 1`] = `
+<p>
+  Test2
+</p>
+`;
+
+exports[`renders App redict 1`] = `
+<p>
+  Test1
+</p>
+`;
+
+exports[`renders App redict 2`] = `
+<p>
+  Test1
+</p>
+`;
+
+exports[`renders App redict 3`] = `
+<p>
+  Test2
+</p>
+`;
+
+exports[`renders App redict 4`] = `
+<p>
+  Test2
+</p>
+`;
+
+exports[`renders App redirecting 'from' with exact and 'to' with exact 1`] = `null`;
+
+exports[`renders App redirecting 'from' without exact and 'to' with exact 1`] = `
+<p>
+  Test1
+</p>
+`;
+
+exports[`renders App redirecting 'from' with exact and 'to' without exact 1`] = `null`;
+
+exports[`renders App redirecting 'from' without exact and 'to' without exact 1`] = `
+<p>
+  Test2
+</p>
+`;
