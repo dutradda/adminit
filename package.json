@@ -9,12 +9,14 @@
     "build": "babel src --out-dir dist --ignore test.jsx,test.js",
     "build:watch": "babel src --watch --out-dir dist --ignore test.jsx,test.js",
     "test": "jest",
+    "test:ci": "jest --ci --coverage --collectCoverageFrom='src/**{js,jsx}' && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:cov": "jest --coverage --collectCoverageFrom='src/**{js,jsx}'"
   },
   "directories": [
     "./dist"
   ],
   "dependencies": {
+    "coveralls": "^3.0.0",
     "material-ui": "^0",
     "react": "^16",
     "react-dom": "^16",
