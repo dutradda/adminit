@@ -46,6 +46,5 @@ function createValidComponent() {
 
 test("renders default theme", () => {
     let component = createValidComponent()
-    console.log(component.props())
     // expect(component.find(<Toolbar/>)).toEqual({})
 })

@@ -22,14 +22,14 @@
 
 import App from './App'
 import BaseHeader from './BaseHeader'
-// import InputsContainer from './containers/InputsContainer'
-// import HttpClient from './httpClient'
+import InputsContainer from './containers/InputsContainer'
+import HttpClient from './httpClient'
 import utils from './utils'
 
 export {
     App,
     BaseHeader,
-    // InputsContainer,
-    // HttpClient,
+    InputsContainer,
+    HttpClient,
     utils
 }
