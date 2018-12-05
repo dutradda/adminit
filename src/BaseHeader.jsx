@@ -38,7 +38,7 @@ export default class BaseHeader extends MuiComponent {
         let alt = this.props.logoAlt ? this.props.logoAlt : this.props.title
 
         return (
-            <Toolbar style={this.context.muiTheme.swaggeritHeader}>
+            <Toolbar style={this.props.muiTheme.palette.adminitHeader}>
                  <ToolbarGroup firstChild={true}>
                     <Link to="/" style={{paddingRight: '1em'}}>
                         <img src={this.props.logo} alt={alt} style={{marginLeft: '1em'}}/>

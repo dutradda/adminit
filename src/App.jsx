@@ -31,6 +31,7 @@ import createBrowserHistory from 'history/createBrowserHistory'
 import PropTypes from 'prop-types'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import muiThemeable from 'material-ui/styles/muiThemeable'
 
 export default class App extends React.Component {
     static propTypes = {
@@ -78,7 +79,7 @@ export default class App extends React.Component {
                     <Route
                         exact={route.exact}
                         path={route.path}
-                        component={route.component}
+                        component={muiThemeable()(route.component)}
                         key={keyCounter}
                     />
                 )

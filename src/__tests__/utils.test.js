@@ -20,7 +20,7 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE. */
 
-import {utils} from '..'
+import { raiseNotImplementedError } from '../utils'
 
 test("utils.raiseNotImplementedError throws error", () => {
     function raiseError() {
@@ -28,7 +28,7 @@ test("utils.raiseNotImplementedError throws error", () => {
             test() {}
         }
         let test = new Test()
-        utils.raiseNotImplementedError(test, test.test)
+        raiseNotImplementedError(test, test.test)
     }
 
     expect(raiseError).toThrowError('Test.test must be implemented!')

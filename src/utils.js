@@ -24,6 +24,6 @@ function raiseNotImplementedError(object, method) {
     throw new Error(`${object.constructor.name}.${method.name} must be implemented!`)
 }
 
-export default {
+export {
     raiseNotImplementedError
 }
