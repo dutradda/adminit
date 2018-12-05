@@ -11,4 +11,4 @@ before_script: yarn build
 
 script: yarn test:ci
 
-after_success: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+after_success: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js debug
