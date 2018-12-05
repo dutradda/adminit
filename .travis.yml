@@ -5,10 +5,8 @@ node_js:
   - 8
   - 9
 
-install: yarn install
+install: yarn add --dev
 
 before_script: yarn build
 
 script: yarn test:ci
-
-after_success: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js debug
