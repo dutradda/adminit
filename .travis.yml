@@ -7,6 +7,4 @@ node_js:
 
 install: yarn install
 
-before_script: yarn build
-
 script: yarn test:ci
