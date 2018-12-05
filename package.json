@@ -9,7 +9,7 @@
     "build": "babel src --out-dir dist --ignore test.jsx,test.js",
     "build:watch": "babel src --watch --out-dir dist --ignore test.jsx,test.js",
     "test": "jest",
-    "test:ci": "jest --coverage && cat ./coverage/lcov.info | coveralls --verbose && rm -rf ./coverage"
+    "test:ci": "jest --coverageReporters=text-lcov | coveralls --verbose"
   },
   "directories": [
     "./dist"
