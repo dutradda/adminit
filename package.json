@@ -9,7 +9,8 @@
     "build": "babel src --out-dir dist --ignore test.jsx,test.js",
     "build:watch": "babel src --watch --out-dir dist --ignore test.jsx,test.js",
     "test": "jest",
-    "test:ci": "jest --ci && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test:ci": "jest --ci --coverage --collectCoverageFrom='src/**{js,jsx}'",
+    "test:cov": "jest --coverage --collectCoverageFrom='src/**{js,jsx}'"
   },
   "directories": [
     "./dist"
